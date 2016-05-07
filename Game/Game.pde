@@ -19,6 +19,10 @@ PImage T14;
 PImage T15;
 PImage T16;
 
+//Players
+PImage plr1;
+
+int plr1Width = 128;
 //Minim setup
 //Minim Setup
 Minim minim;//audio context
@@ -39,6 +43,10 @@ void setup() {
   T14 = loadImage("14.png");
   T15 = loadImage("15.png");
   T16 = loadImage("16.png");
+  
+  //Width 1792
+  //Height 1280
+  plr1 = loadImage("cowboy.png");
   
   //Playing the song itself
   minim = new Minim(this);
@@ -78,4 +86,5 @@ void draw() {
   image(T14, 830, 400);
   image(T15, 955, 400);
   image(T16, 1080, 400);
+  
 }
